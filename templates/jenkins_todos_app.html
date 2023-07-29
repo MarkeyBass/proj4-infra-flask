@@ -20,7 +20,7 @@
         <h1 class="mb-5 mt-5">Todos App Jobs</h1>
         <form class="mt-4" action="/jenkins_todos_app" method="POST">
             <fieldset>
-                <legend>Run tests and deploy to prod</legend>
+                <legend>Run tests and deploy to staging environment</legend>
                 <p><strong>last build number: {{test_and_prod_last_build['number']}}</strong></p>
                 <button type="submit" class="btn btn-primary">Submit</button>
                 <input type="hidden" name="job-option" value="TEST_PROD_BOTH">
@@ -29,7 +29,7 @@
         <form class="mt-4" action="/jenkins_todos_app" method="POST">
 
             <fieldset class="mt-4">
-                <legend>Prod Direct Deploy</legend>
+                <legend>Staging environment direct deploy</legend>
                 <p><strong>last build number: {{prod_last_build['number']}}</strong></p>
                 <h6>Select which servers to run</h6>
                 <div class="form-check">
