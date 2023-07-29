@@ -1,0 +1,15 @@
+version: '3'
+x-common:
+  project: infra-flask
+
+services:
+  server:
+    container_name: server
+    build: .
+    ports: 
+      - '5001:5001'
+    volumes:
+      - /app/env
+      - ./:/app
+    restart: always
+  

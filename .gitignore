@@ -1,0 +1,7 @@
+node_modules/
+venv/
+env/
+__pycache__
+my-notes-*.txt
+jenkinsfile-development-notes
+temp-files.txt
